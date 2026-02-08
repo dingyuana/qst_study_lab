@@ -370,10 +370,11 @@ export default function SettingsPage() {
                                       <div className="relative flex-1">
                                         <Input
                                           type={showApiKeys[provider.id] ? "text" : "password"}
-                                          value={provider.apiKey || ""}
+                                          defaultValue={provider.apiKey || ""}
                                           placeholder={`输入 ${provider.name} API Key`}
                                           className="pr-10"
                                           disabled={!provider.enabled}
+                                          readOnly
                                         />
                                         <Button
                                           variant="ghost"
@@ -399,10 +400,11 @@ export default function SettingsPage() {
                                   <div>
                                     <Label className="text-xs">Base URL (可选)</Label>
                                     <Input
-                                      value={provider.baseUrl || ""}
+                                      defaultValue={provider.baseUrl || ""}
                                       placeholder={`${provider.name} API 地址`}
                                       className="mt-1"
                                       disabled={!provider.enabled}
+                                      readOnly
                                     />
                                   </div>
                                 </div>
