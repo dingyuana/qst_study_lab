@@ -1,0 +1,107 @@
+# QST智能学习助手 .gitignore
+
+# ===================
+# Python Backend
+# ===================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv/
+venv/
+ENV/
+env/
+.venv*
+*~
+# PyInstaller
+*.manifest
+*.spec
+
+# ===================
+# Node.js Frontend
+# ===================
+node_modules/
+.next/
+out/
+build/
+*.local
+
+# ===================
+# IDE and OS
+# ===================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===================
+# Docker
+# ===================
+.docker/
+
+# ===================
+# Logs and Debug
+# ===================
+logs/
+*.log
+.pdm.toml
+
+# ===================
+# Testing
+# ===================
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+.coverageverage
+*.cover
+
+# ===================
+# Database
+# ===================
+*.db
+*.sqlite3
+*.sqlite
+data/
+vector_store/
+
+# ===================
+# Project Specific
+# ===================
+*.pem
+*.key
+*.crt
+*.bak
+*~
+.temp/
+tmp/
+
+# ===================
+# Cursor AI
+# ===================
+.cursor/
